@@ -7,7 +7,7 @@ const team = [
     {
         name: 'Angela Caroll',
         role: 'Chief Editor',
-        image: '..\img\angela-caroll-chief-editor.jpg',
+        image: 'angela-caroll-chief-editor.jpg',
     },
     {
         name: 'Walter Gordon',
@@ -34,34 +34,36 @@ const team = [
 generateTeam();
 
 function generateTeam(){
-    for(let i = 0; i < team.length; i++){
-        console.log(team[i]);
-        createTeamMember (team[i]);
+    for(let member of team){
+        createTeamMember(member);
     }
 } 
 
 
 
-function createTeamMember (team) {
+function createTeamMember (member) {
 
     const teamContainer = document.querySelector('.team-container');
     let prevcontent = teamContainer.innerHTML;
- 
+    
+    const {name, role, image} = member;
+
     prevcontent += 
-    '
+    ` 
     <div class="team-card">
-        <div class="card-image">
-            <img
-                src="img/${member.image}"
-                alt="${member.name}"
-            />
-        </div>
-        <div class="card-text">
-            <h3>${member.name}</h3>
-            <p>${member.role}</p>
-        </div>
+      <div class="card-image">
+        <img
+          src="img/${image}"
+          alt="${name}"
+        />
+      </div>
+      <div class="card-text">
+        <h3>${name}</h3>
+        <p>${role}</p>
+      </div>
     </div>
-    ';
+  `;
+
   
     teamContainer.innerHTML= prevcontent;
 }
