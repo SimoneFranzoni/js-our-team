@@ -2,7 +2,7 @@ const team = [
     {
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
-        image: '..\img\wayne-barnett-founder-ceo.jpg',
+        image: 'wayne-barnett-founder-ceo.jpg',
     },
     {
         name: 'Angela Caroll',
@@ -12,22 +12,22 @@ const team = [
     {
         name: 'Walter Gordon',
         role: 'Office Manager',
-        image: '..\img\walter-gordon-office-manager.jpg',
+        image: 'walter-gordon-office-manager.jpg',
     },
     {
         name: 'Angela Lopez',
         role: 'Social Media Manager',
-        image: '..\img\angela-lopez-social-media-manager.jpg',
+        image: 'angela-lopez-social-media-manager.jpg',
     },
     {
         name: 'Scott Estrada',
         role: 'Developer',
-        image: '',
+        image: 'scott-estrada-developer.jpg',
     },
     {
         name: 'Barbara Ramos',
         role: 'Graphic Designer',
-        image: '',
+        image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
 
