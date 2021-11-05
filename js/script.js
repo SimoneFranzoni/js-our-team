@@ -46,9 +46,9 @@ function createTeamMember (team) {
 
     const teamContainer = document.querySelector('.team-container');
     let prevcontent = teamContainer.innerHTML;
- /*
+ 
     prevcontent += 
-    '  
+    '
     <div class="team-card">
         <div class="card-image">
             <img
@@ -62,6 +62,6 @@ function createTeamMember (team) {
         </div>
     </div>
     ';
-  */
+  
     teamContainer.innerHTML= prevcontent;
 }
